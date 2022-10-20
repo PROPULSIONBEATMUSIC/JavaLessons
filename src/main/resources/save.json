@@ -1,0 +1,14 @@
+[
+{
+  "day": 1,
+  "manpower": 100,
+  "budget": 2000,
+  "pollution": 0,
+  "rep_gov": 5,
+  "rep_civ": 5,
+  "rep_wrk": 5,
+  "rep_sci": 5,
+  "rep_fag": 5,
+  "rep_bus": 5
+}
+]
