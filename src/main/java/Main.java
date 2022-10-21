@@ -1,11 +1,17 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import json.saveSystem.ReaderWriter;
+import json.saveSystem.SaveSystem;
+
 import javax.management.AttributeList;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //  Класс, в котором будет показана работа и создание всех примитивов в Java
 
         PrimitiveTypesExample pr = new PrimitiveTypesExample();
@@ -85,6 +91,10 @@ public class Main {
         System.out.println(will.hashCode());
         System.out.println(tom.hashCode());
         System.out.println(person.hashCode());
+
+        ReaderWriter readerWriter = new ReaderWriter();
+        readerWriter.mapper();
+
     }
 
 //    public static void equalsNum(int a, int b) {
@@ -102,6 +112,7 @@ public class Main {
 //            System.out.println(a.hashCode() + " not equals " + b.hashCode());
 //        }
 //    }
+
 
     public static void getNumber(int a, String b, byte c, long d, char e, float f, double g, boolean h) {
         a = a^3;
